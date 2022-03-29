@@ -1,8 +1,26 @@
 [
   {
     "versionName": "1.0.0",
-    "versionCode": 3,
+    "versionCode": 10,
     "platform": "android",
-    "desc": ""
+    "desc": "<ul><li>4test1</li><li>test2</li><li>test3</li></ul>"
+  },
+  {
+    "versionName": "1.0.0",
+    "versionCode": 9,
+    "platform": "android",
+    "desc": "<ul><li>3test1</li><li>test2</li><li>test3</li></ul>"
+  },
+  {
+    "versionName": "1.0.0",
+    "versionCode": 8,
+    "platform": "android",
+    "desc": "<ul><li>2test1</li><li>test2</li><li>test3</li></ul>"
+  },
+  {
+    "versionName": "1.0.0",
+    "versionCode": 7,
+    "platform": "android",
+    "desc": "<ul><li>1test1</li><li>test2</li><li>test3</li></ul>"
   }
 ]

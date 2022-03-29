@@ -1,6 +1,6 @@
 {
   "versionName": "1.0.0",
-  "versionCode": 3,
+  "versionCode": 10,
   "platform": "android",
-  "desc": ""
+  "desc": "<ul><li>test1</li><li>test2</li><li>test3</li></ul>"
 }
