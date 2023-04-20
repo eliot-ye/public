@@ -1,0 +1,14 @@
+[
+  {
+    "versionName": "1.0.0",
+    "versionCode": 1,
+    "platform": "android",
+    "desc": "<ul><li>android test1</li><li>test2</li><li>test3</li></ul>"
+  },
+  {
+    "versionName": "1.0.0",
+    "versionCode": 1,
+    "platform": "ios",
+    "desc": "<ul><li>ios test1</li><li>test2</li><li>test3</li></ul>"
+  }
+]
