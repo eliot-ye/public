@@ -11,7 +11,10 @@
 <body>
   <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh;">
     <button id="btn">Click</button>
-    <div id="result" style="padding: 20px;"></div>
+    <div style="padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
+      <span id="has-biometrics"></span>
+      <span id="result" style="word-wrap: normal;"></span>
+    </div>
   </div>
 </body>
 <script>
@@ -27,6 +30,9 @@
   //   })
   // }
 
+  if (window.biometrics) {
+    document.getElementById('has-biometrics').innerText = "has biometrics"
+  }
   document.getElementById('btn').addEventListener('click', async () => {
     if (window.biometrics) {
       /** @type {(option?: {promptMessage: string;}) => Promise<{id: string; type: string; success: boolean; error?: string}>} */
