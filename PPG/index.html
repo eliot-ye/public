@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <button id="btn">Click</button>
+  </div>
+</body>
+<script>
+  // function biometrics({ promptMessage } = {}) {
+  //   return new Promise((resolve, reject) => {
+  //     const id = Math.random().toString(36).slice(-8) + ':' + new Date().getTime()
+  //     window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'biometrics', id, promptMessage }));
+  //     window.addEventListener('message', (event) => {
+  //       const data = JSON.parse(event.data)
+  //       if (data.type === 'biometrics' && data.id === id) {
+  //         resolve(data)
+  //       }
+  //     })
+  //   })
+  // }
+
+  document.getElementById('btn').addEventListener('click', () => {
+    if (window.biometrics) {
+      alert("biometrics")
+
+      /** @type {(option?: {promptMessage: string;}) => Promise<{id: string; type: string; success: boolean; error?: string}>} */
+      const biometrics = window.biometrics
+
+      biometrics({ promptMessage: 'promptMessage test' }).then((resultObject) => {
+        alert(JSON.stringify(resultObject))
+      })
+    }
+  })
+</script>
+
+</html>
