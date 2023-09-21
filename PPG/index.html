@@ -38,10 +38,14 @@
   }
   document.getElementById('btn-biometrics').addEventListener('click', async () => {
     if (window.biometrics) {
-      /** @type {(option?: {promptMessage: string;}) => Promise<{id: string; type: string; success: boolean; error?: string}>} */
-      const biometrics = window.biometrics
-      const resultObject = await biometrics({ promptMessage: 'promptMessage test' })
-      document.getElementById('result').innerHTML = JSON.stringify(resultObject)
+      try {
+        /** @type {(option?: {promptMessage: string;}) => Promise<{id: string; type: string; success: boolean; error?: string}>} */
+        const biometrics = window.biometrics
+        const resultObject = await biometrics({ promptMessage: 'promptMessage test' })
+        document.getElementById('result').innerHTML = JSON.stringify(resultObject)
+      } catch (error) {
+        document.getElementById('result').innerHTML = JSON.stringify(error)
+      }
     }
   })
 
