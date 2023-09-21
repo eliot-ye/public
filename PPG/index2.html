@@ -26,7 +26,11 @@
   //     const id = Math.random().toString(36).slice(-8) + '_' + new Date().getTime()
   //     window[id] = function (data) {
   //       if (data.type === 'biometrics' && data.id === id) {
-  //         resolve(data)
+  //         if (data.statusCode === 'SUC200') {
+  //           resolve(data.verifySuccess);
+  //         } else {
+  //           reject({ statusCode: data.statusCode, error: data.error });
+  //         }
   //       }
   //     }
   //     window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'biometrics', id, promptMessage }));
