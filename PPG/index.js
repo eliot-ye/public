@@ -18,6 +18,7 @@
 // };
 
 (function () {
+  document.getElementById("inApp").innerText = window.inApp || false;
   document.getElementById("has-appVerify").innerText = window.appVerify
     ? "yes"
     : "no";
