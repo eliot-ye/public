@@ -18,9 +18,10 @@
 // };
 
 (function () {
-  if (window.appVerify) {
-    document.getElementById("has-appVerify").innerText = "has appVerify";
-  }
+  document.getElementById("has-appVerify").innerText = window.appVerify
+    ? "yes"
+    : "no";
+
   document
     .getElementById("btn-appVerify")
     .addEventListener("click", async () => {

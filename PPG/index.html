@@ -6,17 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+  </style>
 </head>
 
 <body>
   <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh;">
-    <div>page 1 go <a href="./index2.html">page 2</a></div>
-    <button id="btn-appVerify">Click appVerify</button>
+    <!-- <div>page 1 go <a href="./index2.html">page 2</a></div> -->
     <div
       style="padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
-      <span id="has-appVerify"></span>
-      <span id="result" style="word-wrap: normal;"></span>
+      <p>
+        <span>has appVerify:</span>
+        <span id="has-appVerify"></span>
+      </p>
+      <p>Result:</p>
+      <p>
+        <span id="result" style="word-wrap: normal;"></span>
+      </p>
     </div>
+    <button id="btn-appVerify">Click appVerify</button>
     <button id="btn-reset">Click reset</button>
   </div>
 </body>
