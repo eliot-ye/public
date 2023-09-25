@@ -1,9 +1,9 @@
-// window.biometrics = function ({ promptMessage } = {}) {
+// window.appVerify = function ({ promptMessage } = {}) {
 //   return new Promise((resolve, reject) => {
 //     const id =
 //       Math.random().toString(36).slice(-8) + "_" + new Date().getTime();
 //     window[id] = function (data) {
-//       if (data.type === "biometrics" && data.id === id) {
+//       if (data.type === "appVerify" && data.id === id) {
 //         if (data.statusCode === "SUC200") {
 //           resolve({ verifySuccess: data.verifySuccess });
 //         } else {
@@ -12,19 +12,19 @@
 //       }
 //     };
 //     window.ReactNativeWebView.postMessage(
-//       JSON.stringify({ type: "biometrics", id, promptMessage })
+//       JSON.stringify({ type: "appVerify", id, promptMessage })
 //     );
 //   });
 // };
 
 (function () {
-  if (window.biometrics) {
-    document.getElementById("has-biometrics").innerText = "has biometrics";
+  if (window.appVerify) {
+    document.getElementById("has-appVerify").innerText = "has appVerify";
   }
   document
-    .getElementById("btn-biometrics")
+    .getElementById("btn-appVerify")
     .addEventListener("click", async () => {
-      if (window.biometrics) {
+      if (window.appVerify) {
         try {
           /**
            * @typedef ReturnObj
@@ -36,8 +36,8 @@
           /**
            * @type {(option?: {promptMessage: string;}) => Promise<ReturnObj>}
            * */
-          const biometrics = window.biometrics;
-          const resultObject = await biometrics({
+          const appVerify = window.appVerify;
+          const resultObject = await appVerify({
             promptMessage: "promptMessage test",
           });
           document.getElementById("result").innerHTML =
