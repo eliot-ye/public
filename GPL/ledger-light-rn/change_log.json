@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "versionName": "0.0.2",
+    "versionCode": 4,
+    "platform": [
+      "android",
+      "ios"
+    ],
+    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.2-alpha/app-prod-release.apk",
+    "desc": "<ul><li>已开发账本主要功能</li></ul>"
+  }
+]
