@@ -40,7 +40,7 @@
            * */
           const appVerify = window.appVerify;
           const resultObject = await appVerify({
-            promptMessage: "promptMessage test",
+            promptMessage: "We need your consent!",
           });
           document.getElementById("result").innerHTML =
             JSON.stringify(resultObject);
