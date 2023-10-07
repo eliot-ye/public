@@ -18,7 +18,7 @@
 // };
 
 (function () {
-  document.getElementById("inApp").innerText = window.inApp || false;
+  document.getElementById("inApp").innerText = window.inApp || "false";
   document.getElementById("has-appVerify").innerText = window.appVerify
     ? "yes"
     : "no";
@@ -36,12 +36,13 @@
            */
 
           /**
-           * @type {(option?: {promptMessage: string;}) => Promise<ReturnObj>}
+           * @type {(option?: {promptMessage?: string;}) => Promise<ReturnObj>}
            * */
           const appVerify = window.appVerify;
-          const resultObject = await appVerify({
-            promptMessage: "We need your consent!",
-          });
+          const resultObject = await appVerify();
+          // const resultObject = await appVerify({
+          //   promptMessage: "Verifying your identity",
+          // });
           document.getElementById("result").innerHTML =
             JSON.stringify(resultObject);
         } catch (error) {
