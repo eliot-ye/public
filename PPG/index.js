@@ -18,7 +18,7 @@
 // };
 
 (function () {
-  document.getElementById("inApp").innerText = window.inApp || false;
+  document.getElementById("inApp").innerText = window.inApp || "false";
   document.getElementById("has-appVerify").innerText = window.appVerify
     ? "yes"
     : "no";
@@ -28,20 +28,10 @@
     .addEventListener("click", async () => {
       if (window.appVerify) {
         try {
-          /**
-           * @typedef ReturnObj
-           * @property {'SUC200' | 'VRF403' | 'UNA404'} statusCode
-           * @property {boolean} [verifySuccess]
-           * @property {string} [error]
-           */
-
-          /**
-           * @type {(option?: {promptMessage: string;}) => Promise<ReturnObj>}
-           * */
-          const appVerify = window.appVerify;
-          const resultObject = await appVerify({
-            promptMessage: "promptMessage test",
-          });
+          const resultObject = await window.appVerify();
+          // const resultObject = await window.appVerify({
+          //   promptMessage: "Verifying your identity",
+          // });
           document.getElementById("result").innerHTML =
             JSON.stringify(resultObject);
         } catch (error) {
