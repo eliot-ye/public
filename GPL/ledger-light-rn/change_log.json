@@ -1,5 +1,15 @@
 [
   {
+    "versionName": "0.0.4",
+    "versionCode": 6,
+    "platform": [
+      "android",
+      "ios"
+    ],
+    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.4-alpha/app-prod-release.apk",
+    "desc": "<div><h2>feat</h2><ul><li>添加简单统计</li></ul><h2>fix</h2><ul><li>改善 AmountMoney input</li></ul><h2>change</h2><ul><li>ControlJSONAlert</li></ul></div>"
+  },
+  {
     "versionName": "0.0.3",
     "versionCode": 5,
     "platform": [
