@@ -1,12 +1,21 @@
 [
   {
+    "versionName": "0.0.5",
+    "versionCode": 7,
+    "platform": [
+      "android",
+      "ios"
+    ],
+    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.4-alpha/app-prod-release.apk",
+    "desc": "<ul><li>fix: colorsDark</li><li>fix: CPNAlertBox add borderColor</li><li>feat: add createReactColors</li><li>feat: add AccountManagementPage</li><li>feat: CPNAlertBox add SV(StateView)</li><li>change: default value</li><li>change: 更新依赖版本</li><li>fix: CPNButton backgroundColor boxShadow</li><li>feat: CPNDropdown add border</li><li>fix: 优化详情的显示逻辑</li><li>change: CPNDropdown</li><li>fix: 统计优化 &amp; 货币显示优化</li><li>fix: cellView height</li><li>feat: login page logo&amp;title</li></ul>"
+  },
+  {
     "versionName": "0.0.4",
     "versionCode": 6,
     "platform": [
       "android",
       "ios"
     ],
-    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.4-alpha/app-prod-release.apk",
     "desc": "<div><h2>feat</h2><ul><li>添加简单统计</li></ul><h2>fix</h2><ul><li>改善 AmountMoney input</li></ul><h2>change</h2><ul><li>ControlJSONAlert</li></ul></div>"
   },
   {
@@ -16,7 +25,6 @@
       "android",
       "ios"
     ],
-    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.3-alpha/app-prod-release.apk",
     "desc": "<div><h3>BREAKING CHANGE</h3><ul><li>公用存储使用了加密，导致之前版本的APP获取不到公用数据，进而导致<strong>之前版本的APP更新到当前版本后不可用</strong>。</li><li>指纹认证的数据加密方式更改。</li></ul><h3>BUG</h3><ul><li>修复一些边框线不显示的bug</li></ul><h3>FEATURE</h3><ul><li>添加了主题设置</li><li>更改了一些颜色</li><li>更改了APP的logo</li></ul></div>"
   },
   {
@@ -26,7 +34,6 @@
       "android",
       "ios"
     ],
-    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.2-alpha/app-prod-release.apk",
     "desc": "<ul><li>已开发账本主要功能</li></ul>"
   }
 ]

@@ -1,12 +1,12 @@
 [
   {
-    "versionName": "0.0.4",
-    "versionCode": 6,
+    "versionName": "0.0.5",
+    "versionCode": 7,
     "platform": [
       "android",
       "ios"
     ],
     "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.4-alpha/app-prod-release.apk",
-    "desc": "<div><h2>feat</h2><ul><li>添加简单统计</li></ul><h2>fix</h2><ul><li>改善 AmountMoney input</li></ul><h2>change</h2><ul><li>ControlJSONAlert</li></ul></div>"
+    "desc": "<ul><li>fix: colorsDark</li><li>fix: CPNAlertBox add borderColor</li><li>feat: add createReactColors</li><li>feat: add AccountManagementPage</li><li>feat: CPNAlertBox add SV(StateView)</li><li>change: default value</li><li>change: 更新依赖版本</li><li>fix: CPNButton backgroundColor boxShadow</li><li>feat: CPNDropdown add border</li><li>fix: 优化详情的显示逻辑</li><li>change: CPNDropdown</li><li>fix: 统计优化 &amp; 货币显示优化</li><li>fix: cellView height</li><li>feat: login page logo&amp;title</li></ul>"
   }
 ]
