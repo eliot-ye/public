@@ -1,12 +1,12 @@
 [
   {
-    "versionName": "0.0.5",
-    "versionCode": 7,
+    "versionName": "0.0.6",
+    "versionCode": 8,
     "platform": [
       "android",
       "ios"
     ],
-    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.5-alpha/app-prod-release.apk",
-    "desc": "<ul><li>fix: colorsDark</li><li>fix: CPNAlertBox add borderColor</li><li>feat: add createReactColors</li><li>feat: add AccountManagementPage</li><li>feat: CPNAlertBox add SV(StateView)</li><li>change: default value</li><li>change: 更新依赖版本</li><li>fix: CPNButton backgroundColor boxShadow</li><li>feat: CPNDropdown add border</li><li>fix: 优化详情的显示逻辑</li><li>change: CPNDropdown</li><li>fix: 统计优化 &amp; 货币显示优化</li><li>fix: cellView height</li><li>feat: login page logo&amp;title</li></ul>"
+    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.6-alpha/app-prod-release.apk",
+    "desc": "<ul><li>fix: bug</li><li>feat: RouterView onReady onStateChange</li><li>change: CPNAlertBox SV(StateView) -&gt; message</li><li>fix: allowDeviceCredentials def false</li></ul>"
   }
 ]
