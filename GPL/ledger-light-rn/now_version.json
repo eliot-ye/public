@@ -1,12 +1,12 @@
 [
   {
-    "versionName": "0.0.7",
-    "versionCode": 9,
+    "versionName": "0.0.8",
+    "versionCode": 10,
     "platform": [
       "android",
       "ios"
     ],
-    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.7-alpha/app-prod-release.apk",
-    "desc": "<ul><li>change: createReactiveConstant addListener unsubscribe</li><li>change: createSubscribeEvents unsubscribe</li><li>change: createSubscribeState unsubscribe</li><li>feat: add createLocalStorage</li><li>fix: type Schema.properties</li><li>add ajv</li><li>优化 createObjectSchema 类型</li><li>change: localeList</li><li>change: AboutPage &amp; LangSettingPage &amp; ThemeSettingPage</li><li>change: AboutPage</li><li>change: authorization pages</li></ul>"
+    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.8-alpha/app-prod-release.apk",
+    "desc": "<ul><li>feat: add createReactConstant</li><li>fix: windowSize</li><li>fix: 更新文本</li><li>fix: WebDAVDetails 回显</li><li>remove react-native-localization</li><li>use gpl-async-storage &amp;&amp; del LocalStorage</li><li>use rtn-i18n &amp; del old i18n</li><li>fix: scripts del postinstall &amp; add pod</li><li>fix: productFlavors</li><li>feat: add android FlagSecure</li><li>fix: 优化 schemaType</li></ul>"
   }
 ]
