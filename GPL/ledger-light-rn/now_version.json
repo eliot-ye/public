@@ -1,12 +1,18 @@
 [
   {
-    "versionName": "0.0.8",
-    "versionCode": 10,
+    "versionName": "0.0.9",
+    "versionCode": 11,
     "platform": [
       "android",
       "ios"
     ],
-    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.8-alpha/app-prod-release.apk",
-    "desc": "<ul><li>feat: add createReactConstant</li><li>fix: windowSize</li><li>fix: 更新文本</li><li>fix: WebDAVDetails 回显</li><li>remove react-native-localization</li><li>use gpl-async-storage &amp;&amp; del LocalStorage</li><li>use rtn-i18n &amp; del old i18n</li><li>fix: scripts del postinstall &amp; add pod</li><li>fix: productFlavors</li><li>feat: add android FlagSecure</li><li>fix: 优化 schemaType</li></ul>"
+    "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.9-alpha/app-prod-release.apk",
+    "updateLinks": [
+      {
+        "platform": "android",
+        "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.0.9-alpha/app-prod-release.apk"
+      }
+    ],
+    "desc": "<ul><li>fix: StatusBar</li><li>feat: CPNToast add clearAll</li><li>fix: CPNLoading props</li><li>fix: getControlJSON</li><li>fix: dateFns.format add 'TZ'</li><li>feat: SplashPage</li><li>fix: CPNSwipeItem</li><li>fix: envControlPath</li><li>feat: add app_uuid</li><li>fix: exitApp</li><li>fix: getControlJSON timeout &amp;&amp; public dir</li><li>fix: public dir</li><li>feat: ControlJSON use @exodus/schemasafe</li><li>feat: typescript-json-schema</li><li>fix: ControlJSON</li><li>change: NotUsed -&gt; Unused</li><li>fix: CPNNoData</li><li>change: createSubscribeState</li><li>change: createReactiveConstant</li><li>fix: \"rtn-i18n\": \"^0.0.5\"</li><li>fix: updateLink</li><li>change: ProviderCPNToast</li><li>feat: add createTaskQueue</li><li>feat: getAliasFromTsconfig</li><li>change: button disabledSetting</li><li>fix: ServerMap</li></ul>"
   }
 ]
