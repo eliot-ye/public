@@ -1,7 +1,7 @@
 {
   "json.schemas": [
     {
-      "url": "https://eliot-ye.gitee.io/gpl-ledger-light-rn/SVersionList.json",
+      "url": "https://eliot-ye.github.io/gpl-ledger-light-rn/SVersionList.json",
       "fileMatch": [
         "GPL/ledger-light-rn/change_log.json",
         "GPL/ledger-light-rn/now_version.json",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "url": "https://eliot-ye.gitee.io/gpl-ledger-light-rn/SControlJSON.json",
+      "url": "https://eliot-ye.github.io/gpl-ledger-light-rn/SControlJSON.json",
       "fileMatch": [
         "GPL/ledger-light-rn/control.json",
         "GPL/ledger-light-rn-dev/control.json"
