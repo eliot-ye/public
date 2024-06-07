@@ -18,17 +18,17 @@
 // };
 
 (function () {
-  document.getElementById("btn-close").addEventListener(() => {
+  document.getElementById("btn-close").addEventListener("click", () => {
     if (window.webviewST) {
       window.webviewST.close();
     }
   });
-  document.getElementById("btn-hideHeader").addEventListener(() => {
+  document.getElementById("btn-hideHeader").addEventListener("click", () => {
     if (window.webviewST) {
       window.webviewST.hideHeader();
     }
   });
-  document.getElementById("btn-showHeader").addEventListener(() => {
+  document.getElementById("btn-showHeader").addEventListener("click", () => {
     if (window.webviewST) {
       window.webviewST.showHeader();
     }
