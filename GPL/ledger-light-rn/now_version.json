@@ -1,7 +1,7 @@
 [
   {
-    "versionName": "0.1.0",
-    "versionCode": 12,
+    "versionName": "0.1.1",
+    "versionCode": 13,
     "platform": [
       "android",
       "ios"
@@ -9,9 +9,9 @@
     "updateLinks": [
       {
         "platform": "android",
-        "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.1.0-alpha/app-prod-release.apk"
+        "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.1.1-alpha/app-prod-release.apk"
       }
     ],
-    "desc": "<ul><li>fix: Server domain</li><li>feat: add OpenUrlCell &amp; renderDebug</li><li>Merge branch 'master' of gitee.com:eliot-ye/gpl-ledger-light-rn</li><li>fix: del</li><li>Create static.yml</li><li>change: giteePublic -&gt; public</li><li>fix: createSubscribeEvents undefined</li></ul>"
+    "desc": "<ul><li>fix: CPNCheckbox 文本区域计算</li><li>fix: rightIcon</li><li>feat: android hardwareBackPress</li><li>fix: Password placeholder</li></ul>"
   }
 ]
