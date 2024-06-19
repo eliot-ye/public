@@ -18,6 +18,21 @@
 // };
 
 (function () {
+  document.getElementById("btn-close").addEventListener("click", () => {
+    if (window.webviewST) {
+      window.webviewST.close();
+    }
+  });
+  document.getElementById("btn-hideHeader").addEventListener("click", () => {
+    if (window.webviewST) {
+      window.webviewST.hideHeader();
+    }
+  });
+  document.getElementById("btn-showHeader").addEventListener("click", () => {
+    if (window.webviewST) {
+      window.webviewST.showHeader();
+    }
+  });
   document.getElementById("inApp").innerText = window.inApp || "false";
   document.getElementById("has-appVerify").innerText = window.appVerify
     ? "yes"
