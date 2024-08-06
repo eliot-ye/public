@@ -1,7 +1,7 @@
 [
   {
-    "versionName": "0.1.0",
-    "versionCode": 12,
+    "versionName": "0.1.2",
+    "versionCode": 14,
     "platform": [
       "android",
       "ios"
@@ -9,8 +9,26 @@
     "updateLinks": [
       {
         "platform": "android",
-        "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.1.0-alpha/app-prod-release.apk"
+        "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.1.2-alpha/app-prod-release.apk"
       }
+    ],
+    "desc": "<ul><li>feat: add &amp; use CPNSwitch</li><li>fix: CTextStyle &amp; CPNButton</li><li>fix: CPNSwipeItem</li><li>feat: CPNText add getFontFamily</li><li>change: configs -&gt; assets</li><li>fix: Image</li><li>fix: tabbar label</li><li>fix: 统一 SwipeItemEventReturn types</li><li>Merge branch 'master' of gitee.com:eliot-ye/gpl-ledger-light-rn</li><li>fix: Debug add SDK API Version</li><li>fix: http</li><li>fix: defaultUpdateLink use Platform.select</li><li>fix: add User-Agent</li><li>fix: SwipeItemEventReturn</li><li>change: AlertButton</li></ul>"
+  },
+  {
+    "versionName": "0.1.1",
+    "versionCode": 13,
+    "platform": [
+      "android",
+      "ios"
+    ],
+    "desc": "<ul><li>fix: CPNCheckbox 文本区域计算</li><li>fix: rightIcon</li><li>feat: android hardwareBackPress</li><li>fix: Password placeholder</li></ul>"
+  },
+  {
+    "versionName": "0.1.0",
+    "versionCode": 12,
+    "platform": [
+      "android",
+      "ios"
     ],
     "desc": "<ul><li>fix: Server domain</li><li>feat: add OpenUrlCell &amp; renderDebug</li><li>Merge branch 'master' of gitee.com:eliot-ye/gpl-ledger-light-rn</li><li>fix: del</li><li>Create static.yml</li><li>change: giteePublic -&gt; public</li><li>fix: createSubscribeEvents undefined</li></ul>"
   },
