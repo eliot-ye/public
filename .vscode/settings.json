@@ -13,7 +13,8 @@
       "url": "https://eliot-ye.github.io/gpl-ledger-light-rn/SControlJSON.json",
       "fileMatch": [
         "GPL/ledger-light-rn/control.json",
-        "GPL/ledger-light-rn-dev/control.json"
+        "GPL/ledger-light-rn-dev/control.json",
+        "PPG/version_v2.json"
       ]
     }
   ]

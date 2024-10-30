@@ -1,0 +1,16 @@
+[
+  {
+    "versionName": [
+      "3.0.0"
+    ],
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "alert": {
+      "title": "更新提示",
+      "message": "当前版本过低，请更新至最新版本",
+      "button": "立即更新"
+    }
+  }
+]
