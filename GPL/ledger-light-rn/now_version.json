@@ -1,7 +1,7 @@
 [
   {
-    "versionName": "0.1.2",
-    "versionCode": 14,
+    "versionName": "0.1.3",
+    "versionCode": 15,
     "platform": [
       "android",
       "ios"
@@ -9,9 +9,9 @@
     "updateLinks": [
       {
         "platform": "android",
-        "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.1.2-alpha/app-prod-release.apk"
+        "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.1.3/app-prod-release.apk"
       }
     ],
-    "desc": "<ul><li>feat: add &amp; use CPNSwitch</li><li>fix: CTextStyle &amp; CPNButton</li><li>fix: CPNSwipeItem</li><li>feat: CPNText add getFontFamily</li><li>change: configs -&gt; assets</li><li>fix: Image</li><li>fix: tabbar label</li><li>fix: 统一 SwipeItemEventReturn types</li><li>Merge branch 'master' of gitee.com:eliot-ye/gpl-ledger-light-rn</li><li>fix: Debug add SDK API Version</li><li>fix: http</li><li>fix: defaultUpdateLink use Platform.select</li><li>fix: add User-Agent</li><li>fix: SwipeItemEventReturn</li><li>change: AlertButton</li></ul>"
+    "desc": "<ul><li>fix: TabBarView</li><li>fix: Col &amp; breakpointWidth</li><li>fix: alert add maxWidth: 400</li><li>fix: dimensions.ts</li><li>fix: add supportedOrientations={['portrait', 'landscape']}</li><li>change: fontFamilyMap -&gt; fontFamilyList</li><li>fix: CPNText useConstant</li><li>change: CPNIonicons useContext(FontColorContext)</li><li>change: add CPNButtonProps.size &amp; StyleGet.maxWidth</li></ul>"
   }
 ]
