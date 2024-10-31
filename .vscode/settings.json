@@ -14,8 +14,13 @@
       "fileMatch": [
         "GPL/ledger-light-rn/control.json",
         "GPL/ledger-light-rn-dev/control.json",
+      ]
+    },
+    {
+      "url": "./PPG/JSONSchemas/SControlJSON.json",
+      "fileMatch": [
         "PPG/version_v2.json"
       ]
-    }
+    },
   ]
 }
