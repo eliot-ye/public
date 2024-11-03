@@ -1,5 +1,14 @@
 [
   {
+    "versionName": "0.1.4",
+    "versionCode": 16,
+    "platform": [
+      "android",
+      "ios"
+    ],
+    "desc": "<ul><li>feat: AccountDetail</li><li>fix: bug</li><li>update: \"react-native\": \"0.76.1\"</li><li>change: ControlItem</li></ul>"
+  },
+  {
     "versionName": "0.1.3",
     "versionCode": 15,
     "platform": [
@@ -20,12 +29,6 @@
     "platform": [
       "android",
       "ios"
-    ],
-    "updateLinks": [
-      {
-        "platform": "android",
-        "updateLink": "https://gitee.com/eliot-ye/gpl-ledger-light-rn/releases/download/v0.1.2-alpha/app-prod-release.apk"
-      }
     ],
     "desc": "<ul><li>feat: add &amp; use CPNSwitch</li><li>fix: CTextStyle &amp; CPNButton</li><li>fix: CPNSwipeItem</li><li>feat: CPNText add getFontFamily</li><li>change: configs -&gt; assets</li><li>fix: Image</li><li>fix: tabbar label</li><li>fix: 统一 SwipeItemEventReturn types</li><li>Merge branch 'master' of gitee.com:eliot-ye/gpl-ledger-light-rn</li><li>fix: Debug add SDK API Version</li><li>fix: http</li><li>fix: defaultUpdateLink use Platform.select</li><li>fix: add User-Agent</li><li>fix: SwipeItemEventReturn</li><li>change: AlertButton</li></ul>"
   },
