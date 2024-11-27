@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPG Test</title>
+</head>
+
+<body>
+  <button class="btn1">
+    btn1
+  </button>
+  <button class="btn2">
+    btn2
+  </button>
+  <script>
+    document.querySelector('.btn1').addEventListener('click', function () {
+      if (window.webviewST) {
+        /**
+         * Set screen capture flag to true to prevent screen capture
+         * Set screen capture flag to false to allow screen capture
+         */
+        window.webviewST.setScreenCaptureFlag(true);
+      }
+    })
+    document.querySelector('.btn2').addEventListener('click', function () {
+      if (window.webviewST) {
+        /**
+         * Set screen capture flag to true to prevent screen capture
+         * Set screen capture flag to false to allow screen capture
+         */
+        window.webviewST.setScreenCaptureFlag(false);
+      }
+    })
+  </script>
+</body>
+
+</html>
