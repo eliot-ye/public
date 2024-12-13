@@ -1,17 +1,40 @@
 [
   {
     "versionName": [
-      "3.0.0"
+      "3.1.0"
     ],
     "platform": [
       "ios",
       "android"
     ],
-    "isBlock": true,
-    "alert": {
-      "title": "更新提示",
-      "message": "当前版本过低，请更新至最新版本",
-      "button": "立即更新"
-    }
+    "CE_ApiServerList": [
+      {
+        "Domain": "https://uat2-arrtureapi.arrture.com/",
+        "ServerMap": {
+          "Cms": "v1/cms"
+        },
+        "ServerEnable": [
+          "Campaign",
+          "Cms",
+          "Flight",
+          "Member",
+          "OpenMember",
+          "Partner",
+          "Point",
+          "Product",
+          "Redemption",
+          "SeedData",
+          "Transaction"
+        ]
+      },
+      {
+        "Domain": "https://mcstaging.plazapremiumgroup.com/",
+        "ServerEnable": [
+          "Magento"
+        ]
+      }
+    ],
+    "CE_PartnerId": 1,
+    "CE_ProgramId": 6
   }
 ]
