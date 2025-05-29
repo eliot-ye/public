@@ -1,39 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PPG Test</title>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/imgs/ic_launcher_round.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Traveller</title>
+  <meta property="og:title" content="Smart Traveller" />
+  <meta property="og:description" content="Your Perfect Trip Starts with Smart Traveller App" />
+  <meta property="og:image" content="/imgs/ic_launcher_foreground.png" />
+  <script type="module" crossorigin src="/assets/main-Cq08owXP.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/init-04iPznZb.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-D8rF50s2.css">
 </head>
 
 <body>
-  <button class="btn1">
-    btn1
-  </button>
-  <button class="btn2">
-    btn2
-  </button>
-  <script>
-    document.querySelector('.btn1').addEventListener('click', function () {
-      if (window.webviewST) {
-        /**
-         * Set screen capture flag to true to prevent screen capture
-         * Set screen capture flag to false to allow screen capture
-         */
-        window.webviewST.setScreenCaptureFlag(true);
-      }
-    })
-    document.querySelector('.btn2').addEventListener('click', function () {
-      if (window.webviewST) {
-        /**
-         * Set screen capture flag to true to prevent screen capture
-         * Set screen capture flag to false to allow screen capture
-         */
-        window.webviewST.setScreenCaptureFlag(false);
-      }
-    })
-  </script>
+  <div id="app">
+    <div class="content-wrapper">
+      <img class="logo" src="/imgs/ic_launcher_foreground.png" alt="logo">
+      <div class="content">
+        <div class="title" data-t="title">
+          Smart Traveller
+        </div>
+        <div class="subtitle" data-t="subtitle">
+          Your Perfect Trip Starts with Smart Traveller App
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-warning copy-btn" data-t="installBtn">
+      Install Now
+    </button>
+    <div id="ExploreOurServices"></div>
+  </div>
 </body>
 
 </html>

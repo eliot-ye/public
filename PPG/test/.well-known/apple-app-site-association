@@ -1,0 +1,31 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "3J7RQU647T.com.react.smarttraveller.beta.qa",
+        "paths": [
+          "*"
+        ]
+      },
+      {
+        "appID": "3J7RQU647T.com.react.smarttraveller.beta",
+        "paths": [
+          "*"
+        ]
+      },
+      {
+        "appID": "3J7RQU647T.com.react.smarttraveller.beta.preprod",
+        "paths": [
+          "*"
+        ]
+      },
+      {
+        "appID": "3J7RQU647T.com.react.smarttraveller",
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
+}

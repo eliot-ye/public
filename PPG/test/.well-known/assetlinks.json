@@ -1,0 +1,51 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.react.smarttraveller.beta.qa",
+      "sha256_cert_fingerprints": [
+        "C1:DC:91:D6:B5:20:AB:40:AB:6D:30:10:17:34:98:96:F3:55:DC:B2:92:DB:27:69:DE:26:83:0F:AB:51:21:7C"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.react.smarttraveller.beta",
+      "sha256_cert_fingerprints": [
+        "C1:DC:91:D6:B5:20:AB:40:AB:6D:30:10:17:34:98:96:F3:55:DC:B2:92:DB:27:69:DE:26:83:0F:AB:51:21:7C"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.react.smarttraveller.beta.preprod",
+      "sha256_cert_fingerprints": [
+        "C1:DC:91:D6:B5:20:AB:40:AB:6D:30:10:17:34:98:96:F3:55:DC:B2:92:DB:27:69:DE:26:83:0F:AB:51:21:7C"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.react.smarttraveller",
+      "sha256_cert_fingerprints": [
+        "C1:DC:91:D6:B5:20:AB:40:AB:6D:30:10:17:34:98:96:F3:55:DC:B2:92:DB:27:69:DE:26:83:0F:AB:51:21:7C",
+        "77:40:84:CC:4F:E4:88:61:DE:C9:D0:B6:43:AE:1C:9F:8E:3F:E2:67:B1:26:46:71:4D:14:E3:CA:1F:D1:C6:9D"
+      ]
+    }
+  }
+]
