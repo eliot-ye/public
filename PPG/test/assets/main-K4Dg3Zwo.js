@@ -1,8 +1,0 @@
-var o=(s,n,i)=>new Promise((e,r)=>{var l=t=>{try{a(i.next(t))}catch(v){r(v)}},c=t=>{try{a(i.throw(t))}catch(v){r(v)}},a=t=>t.done?e(t.value):Promise.resolve(t.value).then(l,c);a((i=i.apply(s,n)).next())});import{a as u,L as p,C as S,i as L,c as d,b as f}from"./init-04iPznZb.js";const g="Admin",x={currentDeepLinkServiceList(){return u(g,"/currentDeepLinkServiceList",{langCd:p[S.getLangCode()]})}},b=L({en:{title:"Smart Traveller",subtitle:"Your Perfect Trip Starts with Smart Traveller App",installBtn:"Install Now",exploreOurServicesTitle:"Explore Our Services"},"zh-cn":{title:"智旅者",subtitle:"完美旅行从【智旅者】开始",installBtn:"立即安装",exploreOurServicesTitle:"探索我们的服务"},"zh-hk":{title:"智旅者",subtitle:"完美旅行從【智旅者】開始",installBtn:"立即安裝",exploreOurServicesTitle:"探索我們的服務"}});function h(){return o(this,null,function*(){const s=document.getElementById("ExploreOurServices");if(!s)return;function n(e){return`<div class="service-item">
-      <img src="${e.imageLink}" alt="${e.title}" class="service-img" >
-      <div class="service-info">
-        <div class="service-title">${e.title}</div>
-        <div class="service-desc">${e.subTitle}</div>
-      </div>
-      ${e.serviceLink?`<a href="${e.serviceLink}" target="_blank" class="btn">${e.buttonText||"Learn More"}</a>`:""}
-    </div>`}const i=yield x.currentDeepLinkServiceList();if(i.serviceResponseCode===200){const e=i.data;if(e.length){let r="";e.forEach((l,c)=>{r+=n(l),c<e.length-1&&(r+='<div class="line"></div>')}),s.innerHTML=`<div class="box"><div class="title">${b.t("exploreOurServicesTitle")}</div> ${r}</div>`}}})}h();d();window.addEventListener("resize",d);f({autoWebsite:!1});
