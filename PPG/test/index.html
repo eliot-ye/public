@@ -16,6 +16,8 @@
   <script type="module" crossorigin src="/public/PPG/test/assets/main-Dv1K63wm.js"></script>
   <link rel="modulepreload" crossorigin href="/public/PPG/test/assets/init-BNpfT3WN.js">
   <link rel="stylesheet" crossorigin href="/public/PPG/test/assets/main-BAiFsrd2.css">
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 </head>
 
 <body>
@@ -32,11 +34,22 @@
         </div>
       </div>
     </div>
+    <div class="cf-turnstile"></div>
     <button class="btn btn-warning btn-large copy-btn" data-t="installBtn">
       Install Now
     </button>
     <div id="ExploreOurServices"></div>
   </div>
 </body>
+<script>
+  window.onloadTurnstileCallback = function () {
+    turnstile.render(".cf-turnstile", {
+      sitekey: "0x4AAAAAABlAbLf-KncjOQAr",
+      callback: function (token) {
+        console.log(`Challenge Success ${token}`);
+      },
+    });
+  };
+</script>
 
 </html>
