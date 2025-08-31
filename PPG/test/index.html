@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/public/PPG/test/favicon.ico" />
+  <link rel="apple-touch-icon" href="/public/PPG/test/imgs/ic_launcher_round.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Traveller</title>
+  <meta name="description" content="Your Perfect Trip Starts with Smart Traveller Ap">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Smart Traveller 2" />
+  <meta property="og:description" content="Your Perfect Trip Starts with Smart Traveller App 2" />
+  <meta property="og:image" content="/public/PPG/test/imgs/ic_launcher_foreground.png" />
+  <meta property="og:url" content="https://dplink.arrture.com/marketplace" />
+  <script type="module" crossorigin src="/public/PPG/test/assets/main-Dv1K63wm.js"></script>
+  <link rel="modulepreload" crossorigin href="/public/PPG/test/assets/init-BNpfT3WN.js">
+  <link rel="stylesheet" crossorigin href="/public/PPG/test/assets/main-BAiFsrd2.css">
+</head>
+
+<body>
+  <div class="app-bg"></div>
+  <div id="app">
+    <div class="content-wrapper">
+      <img class="logo" src="/public/PPG/test/imgs/ic_launcher_foreground.png" alt="logo">
+      <div class="content">
+        <div class="title" data-t="title">
+          Smart Traveller
+        </div>
+        <div class="subtitle" data-t="subtitle">
+          Your Perfect Trip Starts with Smart Traveller App
+        </div>
+      </div>
+    </div>
+    <div class="cf-turnstile"></div>
+    <button class="btn btn-warning btn-large copy-btn" data-t="installBtn" onclick="renderTurnstile()">
+      Install Now
+    </button>
+    <div id="ExploreOurServices"></div>
+  </div>
+</body>
+<script>
+  let _onloadCallbackName = ''
+  function initTurnstileSDK(options = {}) {
+    if (window.turnstile) {
+      return new Error('turnstile is already loaded.');
+    }
+    const { onloadCallbackName = 'onloadTurnstileCallback' } = options;
+    _onloadCallbackName = onloadCallbackName;
+    const script = document.createElement("script");
+    script.src = `https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=${onloadCallbackName}`;
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+    window[onloadCallbackName] = () => { }
+  }
+  function readyTurnstile() {
+    if (!_onloadCallbackName) {
+      throw new Error('turnstile not loaded');
+    }
+    return new Promise((res) => {
+      if (!window.turnstile) {
+        window[_onloadCallbackName] = () => {
+          res(window.turnstile)
+        }
+      } else {
+        res(window.turnstile)
+      }
+    })
+  }
+</script>
+<script>
+  initTurnstileSDK()
+
+  async function renderTurnstile() {
+    await readyTurnstile()
+    turnstile.render(".cf-turnstile", {
+      sitekey: "0x4AAAAAABlAbLf-KncjOQAr",
+      callback: function (token) {
+        console.log(`Challenge Success ${token}`);
+      },
+      'error-callback'(ev) {
+        console.log(`Challenge Failed ${ev}`);
+      },
+      'unsupported-callback'(ev) {
+        console.log(`Challenge Unsupported ${ev}`);
+      }
+    });
+  }
+
+</script>
+
+</html>
