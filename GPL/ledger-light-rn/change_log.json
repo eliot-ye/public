@@ -1,5 +1,14 @@
 [
   {
+    "versionName": "0.1.5",
+    "versionCode": 18,
+    "platform": [
+      "android",
+      "ios"
+    ],
+    "desc": "<ul><li>update reactnative</li><li>🐛 fix(CPNAlert): track alert IDs in state management</li><li>fix: CPNAlert</li><li>fix: WindowSize - getWindowShape</li><li>fix: WindowSize - WidthBreakpoint</li><li>fix: android navigationBarColor</li><li>fix: ControlItem</li><li>fix: controlJSON 可以累加</li><li>fix: useApiState</li><li>feat: add rtn-screen-capture</li></ul>"
+  },
+  {
     "versionName": "0.1.4",
     "versionCode": 16,
     "platform": [
