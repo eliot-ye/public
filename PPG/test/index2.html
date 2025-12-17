@@ -20,6 +20,11 @@
     <button class="btn btn-warning btn-large" onclick="onClipboard">
       Install Now2
     </button>
+    <br />
+    <div id="handleCopyText"></div>
+    <button class="btn btn-warning btn-large" onclick="handleCopyText">
+      Install Now3
+    </button>
   </div>
 </body>
 
@@ -48,6 +53,90 @@
     navigator.clipboard.writeText('ClipboardJS Test: ' + new Date.toISOString()).catch((e) => {
       ClipboardEle.innerHTML = `Failed to copy! Action: ${e.action}; Trigger: ${e.trigger}`
     })
+  }
+</script>
+
+<script>
+  const copyText = (text) => {
+    return new Promise((resolve) => {
+      // 检测iOS环境
+      const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+      try {
+        const textString = text.toString();
+        const input = document.createElement('input');
+        input.id = 'copy-input';
+        input.readOnly = true;
+        input.style.position = 'fixed';
+        input.style.opacity = '0';
+        input.style.pointerEvents = 'none';
+        input.style.zIndex = '-1000';
+        document.body.appendChild(input);
+        input.value = textString;
+
+        // iOS特殊处理
+        if (isiOS) {
+          // 创建一个临时的可见元素来获取焦点
+          const focusTrap = document.createElement('div');
+          focusTrap.contentEditable = 'true';
+          focusTrap.style.position = 'fixed';
+          focusTrap.style.top = '0';
+          focusTrap.style.left = '0';
+          focusTrap.style.width = '100%';
+          focusTrap.style.height = '100%';
+          focusTrap.style.zIndex = '9999';
+          document.body.appendChild(focusTrap);
+
+          // 先聚焦到临时元素
+          focusTrap.focus();
+
+          // 延迟执行复制操作，给UI线程时间处理焦点变化
+          setTimeout(() => {
+            selectText(input, 0, textString.length);
+
+            // 尝试复制
+            const copyResult = document.execCommand('copy');
+
+            // 清理DOM
+            document.body.removeChild(focusTrap);
+            input.blur();
+            document.body.removeChild(input);
+
+            resolve(copyResult);
+          }, 100);
+        } else {
+          // 非iOS环境使用标准流程
+          selectText(input, 0, textString.length);
+
+          const copyResult = document.execCommand('copy');
+
+          input.blur();
+          document.body.removeChild(input);
+
+          resolve(copyResult);
+        }
+      } catch (error) {
+        console.error('复制失败:', error);
+        resolve(false);
+      }
+
+      function selectText(textBox, startIndex, stopIndex) {
+        if (textBox.createTextRange) {
+          const range = textBox.createTextRange();
+          range.collapse(true);
+          range.moveStart('character', startIndex);
+          range.moveEnd('character', stopIndex - startIndex);
+          range.select();
+        } else {
+          textBox.setSelectionRange(startIndex, stopIndex);
+          textBox.focus();
+        }
+      }
+    });
+  };
+
+  function handleCopyText() {
+    copyText('ClipboardJS Test: ' + new Date.toISOString())
   }
 </script>
 
