@@ -1,16 +1,52 @@
 [
   {
     "versionName": [
-      "3.1.4",
-      "3.1.3",
-      "3.1.2"
+      "3.7.5"
     ],
     "platform": [
       "ios",
       "android"
     ],
-    "CE_HazardousEnv": [
-      "isDebuggedMode"
+    "CE_PartnerId": 1,
+    "CE_ProgramId": 6,
+    "CE_XPPGApiSubscription": "e7ec61929e2049148e366b7d243ee939StPmdf",
+    "CE_ApiServerList": [
+      {
+        "Domain": "https://uat2-arrtureapi.arrture.com/",
+        "ServerMap": {
+          "Cms": "v1/cms"
+        },
+        "ServerEnable": [
+          "Campaign",
+          "Cms",
+          "Flight",
+          "Member",
+          "OpenMember",
+          "Partner",
+          "Point",
+          "Redemption",
+          "SeedData",
+          "Transaction"
+        ]
+      },
+      {
+        "Domain": "https://mcstaging.plazapremiumgroup.com/",
+        "ServerEnable": [
+          "Magento"
+        ]
+      }
+    ]
+  },
+  {
+    "versionName": [
+      "All"
+    ],
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "grayscaleCountryCodes": [
+      "HK"
     ]
   }
 ]

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" crossorigin href="/public/PPG/test/assets/main-BAiFsrd2.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <div id="isSupported"></div>
+    <button class="btn btn-warning btn-large copy-btn">
+      Install Now
+    </button>
+  </div>
+</body>
+
+<script>
+  const isSupported = ClipboardJS.isSupported()
+  document.getElementById('isSupported').innerHTML = isSupported ? 'Supported' : 'Not Supported'
+  const clipboard = new ClipboardJS('.copy-btn', {
+    text: function () {
+      return 'ClipboardJS Test: ' + new Date.toISOString()
+    }
+  })
+  clipboard.on('error', function (e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+    alert(`Failed to copy! Action: ${e.action}; Trigger: ${e.trigger}`)
+  });
+</script>
+
+</html>
