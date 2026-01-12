@@ -1,3 +1,3 @@
-import { ControlItem } from "/Users/eliot/work/PPG-APP-ST-V2/src/assets/environment/envControl";
+import { ControlItem } from "/Users/eliot.yecn.ey.com/work/PPG-Smarttravel/src/assets/environment/envControl";
 
 type SControlJSON = ControlItem[];
