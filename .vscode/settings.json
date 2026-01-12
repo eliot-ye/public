@@ -19,7 +19,8 @@
     {
       "url": "./PPG/JSONSchemas/SControlJSON.json",
       "fileMatch": [
-        "PPG/version_v2.json"
+        "PPG/version_v2.json",
+        "PPG/version_v2_temp_prod2uat.json"
       ]
     },
   ]
