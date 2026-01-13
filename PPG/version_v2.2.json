@@ -1,0 +1,18 @@
+[
+  {
+    "versionName": [
+      "<3.8.1"
+    ],
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "alert": {
+      "title": "<3.8.1",
+      "richTextMessage": "",
+      "confirmClose": false,
+      "confirmExitApp": true
+    },
+    "isBlock": true
+  }
+]
