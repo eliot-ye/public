@@ -1,0 +1,12 @@
+[
+  {
+    "versionName": [
+      "3.8.0"
+    ],
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "CE_PaddingReview": true
+  }
+]
